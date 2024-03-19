@@ -1,0 +1,16 @@
+Four access modifiers in Java:
+
+public: Accessible from anywhere. Classes, methods, and variables declared as public can be accessed by any other class.
+protected: Accessible within the same package or by subclasses in different packages. Protected methods and variables cannot be accessed by classes outside the package or unrelated subclasses.
+default (no modifier): Accessible within the same package. If no access modifier is specified, it is considered as default access. Classes, methods, and variables with default access can only be accessed by classes in the same package.
+private: Accessible only within the same class. Private methods and variables cannot be accessed by any other class.
+
+Difference between Exception and Error:
+
+Exception: Exceptions are conditions that occur at runtime and disrupt the normal flow of a program. They are typically caused by error conditions in code, such as invalid user input or network failure. Exceptions can be caught and handled using try-catch blocks to prevent program termination.
+Error: Errors, on the other hand, are exceptional conditions that are not expected to be caught or handled by the application code. They usually denote serious problems that should not be caught, such as JVM crashes, out of memory errors, or stack overflow errors. Errors typically indicate severe problems that cannot be recovered from.
+
+Difference between checked Exception and unchecked Exception:
+
+Checked Exception: Checked exceptions are exceptions that are checked at compile-time. This means that the compiler ensures that these exceptions are either caught and handled using a try-catch block or declared to be thrown in the method signature using the throws keyword. Examples of checked exceptions include IOException, SQLException, etc.
+Unchecked Exception: Unchecked exceptions, also known as runtime exceptions, are not checked at compile-time. These exceptions occur during the execution of the program and do not need to be declared in a method's throws clause. Unchecked exceptions are subclasses of RuntimeException and typically represent programming errors or unexpected conditions. Examples include NullPointerException, ArrayIndexOutOfBoundsException, etc.
