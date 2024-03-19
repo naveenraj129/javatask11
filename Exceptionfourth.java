@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Exceptionfourth {
+public class Exception3 {
     public static void main(String[] args) {
         Scanner value = new Scanner(System.in);
         int age = value.nextInt();
@@ -17,3 +17,10 @@ public class Exceptionfourth {
         }
     }
 }
+
+public class InvalidAgeException extends Exception {
+    public InvalidAgeException(String message) {
+        super(message);
+    }
+}
+
